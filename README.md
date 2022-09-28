@@ -8,7 +8,7 @@ A minimalist collection of functions to support functional programming.
 
 For example, it includes the following:
 
-- Methods of built-in data types as functions.
+- Method of object as function.
 
   If you wanted to apply `trim` to all elements of a `string[]`, you would do
   something like this:
@@ -20,47 +20,28 @@ For example, it includes the following:
   Use `string#trim`.
 
   ```ts
-  import { trim } from "https://deno.land/x/prelude_js@$VERSION/string.ts";
+  import { trim } from "https://deno.land/x/prelude_js@$VERSION/mod.ts";
   const runtime = [" deno ", " node.js"].map(trim);
   ```
 
 ## Method as function
 
-Methods are provided as functions from built-in data types.
+Methods are provided as functions from any objects.
 
 The independence of methods as functions is convenient for functional
 programming.
 
-### endpoint
+### unary
 
-Endpoints are provided with the following rules.
+Property is provided as unary.
 
-```ts
-import * as methods from "https://deno.land/x/prelude_js@$VERSION/<data_type>.ts";
-```
+- constructor
+- description
+- length
 
-where `<data_type>` denotes the data type.
+## multiary
 
-For example:
-
-- string
-- number
-- object
-
-You can import any module you like via `namespace import` or `named import`.
-
-```ts
-import * as String from "https://deno.land/x/prelude_js@$VERSION/string.ts";
-import { trim } from "https://deno.land/x/prelude_js@$VERSION/string.ts";
-String.trim(" hello ");
-trim(" world ");
-```
-
-### string
-
-```ts
-import * as String from "https://deno.land/x/prelude_js@$VERSION/string.ts";
-```
+Method is provided as a multiary.
 
 - at
 - charAt
@@ -83,39 +64,11 @@ import * as String from "https://deno.land/x/prelude_js@$VERSION/string.ts";
 - valueOf
 - trimStart
 - trimEnd
-- length
-
-### number
-
-```ts
-import * as Number from "https://deno.land/x/prelude_js@$VERSION/number.ts";
-```
-
 - toFixed
 - toExponential
 - toPrecision
-- valueOf
-
-### bigint
-
-```ts
-import * as Bigint from "https://deno.land/x/prelude_js@$VERSION/bigint.ts";
-```
-
 - toString
 - toLocaleString
-- valueOf
-
-### object
-
-```ts
-import * as Object from "https://deno.land/x/prelude_js@$VERSION/object.ts";
-```
-
-- constructor
-- toString
-- toLocaleString
-- valueOf
 
 ## License
 
