@@ -1,3 +1,10 @@
+# [1.0.0-beta.2](https://github.com/TomokiMiyauci/prelude-js/compare/1.0.0-beta.1...1.0.0-beta.2) (2022-09-28)
+
+
+### Features
+
+* **multiary:** all functions are generics, export globally ([3ac0f41](https://github.com/TomokiMiyauci/prelude-js/commit/3ac0f4105e6e69d01cd8eccffd3f6a2cee1cb146))
+
 # 1.0.0-beta.1 (2022-09-27)
 
 
