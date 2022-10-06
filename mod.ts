@@ -25,3 +25,4 @@ export {
   trimStart,
   valueOf,
 } from "./multiary.ts";
+export { head } from "./lists.ts";

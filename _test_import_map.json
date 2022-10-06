@@ -2,6 +2,6 @@
   "imports": {
     "https://deno.land/x/prelude_js@$VERSION/": "./",
     "https://deno.land/x/prelude_js@$VERSION/<data_type>.ts": "./string.ts",
-    "https://deno.land/std@$VERSION/": "https://deno.land/std@0.155.0/"
+    "https://deno.land/std@$VERSION/": "https://deno.land/std@0.158.0/"
   }
 }
