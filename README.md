@@ -76,7 +76,7 @@ A list in this project refers to an `Iterable` object.
 
 ### Head
 
-Take head(first) element of list.
+Take head(first) element from list.
 
 ```ts
 import { head } from "https://deno.land/x/prelude_js@$VERSION/mod.ts";
