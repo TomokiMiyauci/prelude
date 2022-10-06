@@ -1,3 +1,11 @@
+# [1.0.0-beta.3](https://github.com/TomokiMiyauci/prelude-js/compare/1.0.0-beta.2...1.0.0-beta.3) (2022-10-06)
+
+
+### Features
+
+* **lists:** add `head` function ([b7f3e98](https://github.com/TomokiMiyauci/prelude-js/commit/b7f3e989f0c64edb77a33e6582309d8d18f01d5b))
+* **records:** add `prop` function ([437e63f](https://github.com/TomokiMiyauci/prelude-js/commit/437e63fd7ad515dd8ea83cad29c821d7107151d2))
+
 # [1.0.0-beta.2](https://github.com/TomokiMiyauci/prelude-js/compare/1.0.0-beta.1...1.0.0-beta.2) (2022-09-28)
 
 
