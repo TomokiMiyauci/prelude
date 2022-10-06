@@ -13,8 +13,7 @@
 export function head<T extends readonly [unknown, ...readonly unknown[]]>(
   value: T,
 ): T[0];
-export function head<T>(value: Iterable<T>): T | undefined;
-export function head(value: Iterable<unknown>): unknown {
+export function head<T>(value: Iterable<T>): T | undefined {
   const [first] = value;
 
   return first;
