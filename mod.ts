@@ -26,3 +26,4 @@ export {
   valueOf,
 } from "./multiary.ts";
 export { head } from "./lists.ts";
+export { prop } from "./records.ts";

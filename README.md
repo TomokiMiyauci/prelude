@@ -88,6 +88,21 @@ assertEquals(head([]), undefined);
 assertEquals(head([1, 2, 3]), 1);
 ```
 
+## Record
+
+Record in this project refers to `Record` types.
+
+### prop
+
+Take property from record.
+
+```ts
+import { prop } from "https://deno.land/x/prelude_js@$VERSION/mod.ts";
+import { assertEquals } from "https://deno.land/std@$VERSION/testing/asserts.ts";
+
+assertEquals(prop("value")({ value: 123 }), 123);
+```
+
 ## License
 
 Copyright © 2022-present [TomokiMiyauci](https://github.com/TomokiMiyauci).
