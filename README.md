@@ -8,7 +8,7 @@
 [![test](https://github.com/TomokiMiyauci/prelude/actions/workflows/test.yaml/badge.svg)](https://github.com/TomokiMiyauci/prelude/actions/workflows/test.yaml)
 [![NPM](https://nodei.co/npm/@miyauci/prelude.png?mini=true)](https://nodei.co/npm/@miyauci/prelude/)
 
-A standard module for functional programming in JavaScript.
+The standard module for functional programming.
 
 ## What
 
