@@ -1,3 +1,6 @@
+// Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
+// This module is browser compatible.
+
 /** Removes the leading and trailing white space and line terminator characters from a string.
  * @param input Any string.
  *
