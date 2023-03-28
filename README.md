@@ -44,6 +44,17 @@ import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 assertEquals(trim(" deno "), "deno");
 ```
 
+## trimStart
+
+Removes the leading white space and line terminator characters from a string.
+
+```ts
+import { trimStart } from "https://deno.land/x/prelude_js@$VERSION/trim_start.ts";
+import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
+
+assertEquals(trimStart(" deno "), "deno ");
+```
+
 ## Where is mod?
 
 There is no single entry point such as `mod`.
