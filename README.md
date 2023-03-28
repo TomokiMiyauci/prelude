@@ -16,21 +16,23 @@ A minimalist collection of functions to support functional programming.
 
 For example, it includes the following:
 
-- Method as function.
+- Method as function
 
-  If you wanted to apply `trim` to all elements of a `string[]`, you would do
-  something like this:
+### Method as function
 
-  ```ts
-  const runtime = [" deno ", " node.js"].map((v) => v.trim());
-  ```
+If you wanted to apply `trim` to all elements of a `string[]`, you would do
+something like this:
 
-  Use `string#trim`.
+```ts
+const runtime = [" deno ", " node.js"].map((v) => v.trim());
+```
 
-  ```ts
-  import { trim } from "https://deno.land/x/prelude_js@$VERSION/trim.ts";
-  const runtime = [" deno ", " node.js"].map(trim);
-  ```
+Use `string#trim`.
+
+```ts
+import { trim } from "https://deno.land/x/prelude_js@$VERSION/trim.ts";
+const runtime = [" deno ", " node.js"].map(trim);
+```
 
 ## trim
 
@@ -75,6 +77,17 @@ import { toUpperCase } from "https://deno.land/x/prelude_js@$VERSION/to_upper_ca
 import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 
 assertEquals(toUpperCase("deno"), "DENO");
+```
+
+## toLowerCase
+
+Converts all the alphabetic characters in a string to lowercase.
+
+```ts
+import { toLowerCase } from "https://deno.land/x/prelude_js@$VERSION/to_lower_case.ts";
+import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
+
+assertEquals(toLowerCase("Deno"), "deno");
 ```
 
 ## Where is mod?
