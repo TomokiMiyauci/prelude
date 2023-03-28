@@ -1,4 +1,12 @@
-# prelude-js
+# prelude
+
+[![deno land](http://img.shields.io/badge/available%20on-deno.land/x-lightgrey.svg?logo=deno)](https://deno.land/x/prelude_js)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/TomokiMiyauci/prelude)](https://github.com/TomokiMiyauci/prelude/releases)
+[![codecov](https://codecov.io/github/TomokiMiyauci/prelude/branch/main/graph/badge.svg)](https://codecov.io/gh/TomokiMiyauci/prelude)
+[![GitHub](https://img.shields.io/github/license/TomokiMiyauci/prelude)](https://github.com/TomokiMiyauci/prelude/blob/main/LICENSE)
+
+[![test](https://github.com/TomokiMiyauci/prelude/actions/workflows/test.yaml/badge.svg)](https://github.com/TomokiMiyauci/prelude/actions/workflows/test.yaml)
+[![NPM](https://nodei.co/npm/@miyauci/prelude.png?mini=true)](https://nodei.co/npm/@miyauci/prelude/)
 
 A standard module for functional programming in JavaScript.
 
@@ -8,7 +16,7 @@ A minimalist collection of functions to support functional programming.
 
 For example, it includes the following:
 
-- Method of object as function.
+- Method as function.
 
   If you wanted to apply `trim` to all elements of a `string[]`, you would do
   something like this:
@@ -20,7 +28,7 @@ For example, it includes the following:
   Use `string#trim`.
 
   ```ts
-  import { trim } from "https://deno.land/x/prelude_js@$VERSION/mod.ts";
+  import { trim } from "https://deno.land/x/prelude_js@$VERSION/trim.ts";
   const runtime = [" deno ", " node.js"].map(trim);
   ```
 
