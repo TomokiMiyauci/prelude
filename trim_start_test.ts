@@ -6,8 +6,8 @@ import {
   it,
   spy,
   stub,
-} from "../_dev_deps.ts";
-import { trimStart } from "../trim_start.ts";
+} from "./_dev_deps.ts";
+import { trimStart } from "./trim_start.ts";
 
 describe("trimStart", () => {
   it("should call String#trimStart", () => {
