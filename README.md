@@ -36,8 +36,14 @@ import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 assertEquals(trim(" deno "), "deno");
 ```
 
+## Where is mod?
+
+There is no single entry point such as `mod`.
+
+This prevents the inclusion of many unnecessary modules.
+
 ## License
 
-Copyright © 2022-present [TomokiMiyauci](https://github.com/TomokiMiyauci).
+Copyright © 2023-present [TomokiMiyauci](https://github.com/TomokiMiyauci).
 
 Released under the [MIT](./LICENSE) license
