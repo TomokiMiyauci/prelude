@@ -1,3 +1,14 @@
+# [1.0.0-beta.4](https://github.com/TomokiMiyauci/prelude/compare/1.0.0-beta.3...1.0.0-beta.4) (2023-03-28)
+
+
+### Features
+
+* **to_lower_case:** add String#toLowerCase as function ([c81f33a](https://github.com/TomokiMiyauci/prelude/commit/c81f33a8639a9cc89a56861676d90651ec1f3270))
+* **to_upper_case:** add String#toUpperCase as function ([3783140](https://github.com/TomokiMiyauci/prelude/commit/37831407fa9b37463467647b8c6e4b05a1f5539e))
+* **trim_end:** add String#trimEnd as function ([c8fc3f3](https://github.com/TomokiMiyauci/prelude/commit/c8fc3f36e323db39402612a4ba94a15f9d555504))
+* **trim_start:** add String#trimStart as function ([0fe964c](https://github.com/TomokiMiyauci/prelude/commit/0fe964c0fd63e42ed24e7ff0ca6f9bceb565bdf1))
+* **trim:** add String#trim as function ([52712c2](https://github.com/TomokiMiyauci/prelude/commit/52712c269b53dda16d0d36d9f2cb291c60300d1b))
+
 # [1.0.0-beta.3](https://github.com/TomokiMiyauci/prelude-js/compare/1.0.0-beta.2...1.0.0-beta.3) (2022-10-06)
 
 
