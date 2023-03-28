@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - uses: denoland/setup-deno@v1
         with:
@@ -38,7 +38,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - uses: denoland/setup-deno@v1
         with:
@@ -49,9 +49,9 @@ jobs:
 
       - name: Generate coverage
         if: ${{ matrix.deno == 'v1.x' }}
-        run: deno coverage coverage --lcov > cov_profile.lcov
+        run: deno coverage coverage --output=cov_profile.lcov --lcov
 
-      - uses: codecov/codecov-action@v2
+      - uses: codecov/codecov-action@v3
         if: ${{ matrix.deno == 'v1.x' }}
         with:
           files: cov_profile.lcov
@@ -66,7 +66,9 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_TOKEN }}
 
       - uses: cycjimmy/semantic-release-action@v3
         with:
