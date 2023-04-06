@@ -1,3 +1,11 @@
+# [1.1.0-beta.1](https://github.com/TomokiMiyauci/prelude/compare/1.0.0...1.1.0-beta.1) (2023-04-06)
+
+
+### Features
+
+* **head:** add `head` function ([13ae4d2](https://github.com/TomokiMiyauci/prelude/commit/13ae4d209480ff94be6a7b7c98af5a207e329ae0))
+* **last:** add `last` function ([7c5ce57](https://github.com/TomokiMiyauci/prelude/commit/7c5ce57c4ee7669196384283f42a754ab87d9b26))
+
 # 1.0.0 (2023-03-28)
 
 
