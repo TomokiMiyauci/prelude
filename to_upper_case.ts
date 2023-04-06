@@ -1,3 +1,6 @@
+// Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
+// This module is browser compatible.
+
 /** Converts all the alphabetic characters in a string to uppercase.
  *
  * @param input Any string.
