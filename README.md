@@ -90,6 +90,21 @@ import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 assertEquals(toLowerCase("Deno"), "deno");
 ```
 
+## head
+
+Returns the first element of the given `Iterable`.
+
+```ts
+import { head } from "https://deno.land/x/prelude_js@$VERSION/head.ts";
+import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
+
+assertEquals(head(""), "");
+assertEquals(head("abc"), "a");
+assertEquals(head([]), undefined);
+assertEquals(head([1, 2, 3]), 1);
+assertEquals(head(new Set(["x", "y", "z"])), "x");
+```
+
 ## Where is mod?
 
 There is no single entry point such as `mod`.
