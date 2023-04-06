@@ -52,7 +52,7 @@ export const makeOptions = (version: string): BuildOptions => {
   const modules = [...entries].map(({ path }) => relative(root, path)).map(
     (path) => {
       const parsed = parse(path);
-      const name = join(parsed.dir, parsed.name);
+      const name = join(parsed.dir, parsed.name) + ".js";
 
       return { name, path };
     },
@@ -103,5 +103,12 @@ export const makeOptions = (version: string): BuildOptions => {
       typesVersions,
     },
     packageManager: "pnpm",
+    mappings: {
+      "https://deno.land/x/isx@1.1.1/is_string.ts": {
+        name: "@miyauci/isx",
+        version: "1.1.1",
+        subPath: "is_string",
+      },
+    },
   };
 };
