@@ -58,7 +58,9 @@ export function head<const T>(input: readonly [T, ...unknown[]]): T;
 export function head<T>(input: Iterable<T>): T | undefined;
 
 export function head<T>(input: Iterable<T>): T | undefined {
-  const element = [...input][0];
+  for (const el of input) {
+    return el;
+  }
 
-  return isString(input) ? element ?? "" as T : element;
+  return isString(input) ? "" as T : undefined;
 }
