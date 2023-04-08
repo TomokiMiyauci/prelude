@@ -46,7 +46,7 @@ export function last<T>(input: Iterable<T>): T | undefined;
 export function last<T>(input: Iterable<T>): T | undefined {
   const result = [...input].pop();
 
-  return isString(input) ? result ?? "" as unknown as T : result;
+  return isString(input) ? result ?? "" as T : result;
 }
 
 /** Infer the last element of string. */

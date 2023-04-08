@@ -60,5 +60,5 @@ export function head<T>(input: Iterable<T>): T | undefined;
 export function head<T>(input: Iterable<T>): T | undefined {
   const element = [...input][0];
 
-  return isString(input) ? element ?? "" as unknown as T : element;
+  return isString(input) ? element ?? "" as T : element;
 }
