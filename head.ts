@@ -42,7 +42,7 @@ export function head(input: string): string;
  * assertEquals(head([1, 2, 3]), 1);
  * ```
  */
-export function head<T>(input: readonly [T, ...unknown[]]): T;
+export function head<const T>(input: readonly [T, ...unknown[]]): T;
 
 /** Returns the first element of the given iterable.
  * @param input Any iterable.
@@ -60,5 +60,5 @@ export function head<T>(input: Iterable<T>): T | undefined;
 export function head<T>(input: Iterable<T>): T | undefined {
   const element = [...input][0];
 
-  return isString(input) ? element ?? "" as unknown as T : element;
+  return isString(input) ? element ?? "" as T : element;
 }
