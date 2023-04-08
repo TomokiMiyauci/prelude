@@ -1,3 +1,11 @@
+# [1.2.0-beta.1](https://github.com/TomokiMiyauci/prelude/compare/1.1.0...1.2.0-beta.1) (2023-04-08)
+
+
+### Features
+
+* **head:** improve type inference ([41d932d](https://github.com/TomokiMiyauci/prelude/commit/41d932d9515e5839ebf3ea86f58f08412ef158ca))
+* **last:** improve type inference for `last` ([b1a6070](https://github.com/TomokiMiyauci/prelude/commit/b1a6070d31ef8c3a1181498b85aa26cab48b0d44))
+
 # [1.1.0](https://github.com/TomokiMiyauci/prelude/compare/1.0.0...1.1.0) (2023-04-06)
 
 
