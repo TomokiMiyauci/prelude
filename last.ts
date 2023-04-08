@@ -29,7 +29,7 @@ export function last<T extends string>(input: T): LastString<T>;
  * assertEquals(last([1, 2, 3]), 3);
  * ```
  */
-export function last<T>(input: readonly [...unknown[], T]): T;
+export function last<const T>(input: readonly [...unknown[], T]): T;
 
 /** Returns the last element of the given iterable.
  * @param input Any iterable.

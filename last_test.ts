@@ -64,10 +64,10 @@ describe("last", () => {
 
   it("should infer last element of array if the value is tuple", () => {
     const result = last([1]);
-    assertType<IsExact<typeof result, number>>(true);
+    assertType<IsExact<typeof result, 1>>(true);
 
     const result1 = last([1, "", false]);
-    assertType<IsExact<typeof result1, boolean>>(true);
+    assertType<IsExact<typeof result1, false>>(true);
   });
 
   it("should infer last element of array or undefined if the value is array", () => {
