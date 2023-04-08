@@ -1,7 +1,7 @@
 import {
   BuildOptions,
   EntryPoint,
-} from "https://deno.land/x/dnt@0.31.0/mod.ts";
+} from "https://deno.land/x/dnt@0.34.0/mod.ts";
 
 import { expandGlobSync } from "https://deno.land/std@0.181.0/fs/expand_glob.ts";
 import {
