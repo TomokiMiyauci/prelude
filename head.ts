@@ -42,7 +42,7 @@ export function head(input: string): string;
  * assertEquals(head([1, 2, 3]), 1);
  * ```
  */
-export function head<T>(input: readonly [T, ...unknown[]]): T;
+export function head<const T>(input: readonly [T, ...unknown[]]): T;
 
 /** Returns the first element of the given iterable.
  * @param input Any iterable.

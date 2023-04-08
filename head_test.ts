@@ -62,7 +62,7 @@ describe("head", () => {
 
   it("should infer head element of list if the input is tuple", () => {
     const result = head([""]);
-    assertType<IsExact<typeof result, string>>(true);
+    assertType<IsExact<typeof result, "">>(true);
   });
 
   it("should infer head element or undefined it the input is array", () => {
