@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isIndexable } from "./deps.ts";
+import { Char } from "./constants.ts";
 
 /** Returns the first element of the given template literal.
  * @param input Any template literal.
@@ -61,7 +62,7 @@ export function head<T>(input: Iterable<T>): T | undefined {
   if (isIndexable<T>(input)) {
     const first = input[0];
 
-    return first ?? (Array.isArray(input) ? first : "" as T);
+    return first ?? (Array.isArray(input) ? first : Char.Empty as T);
   }
 
   for (const el of input) return el;

@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isIndexable } from "./deps.ts";
+import { Char } from "./constants.ts";
 
 /** Returns the last element of the given string.
  * @param input Any string.
@@ -47,7 +48,7 @@ export function last<T>(input: Iterable<T>): T | undefined {
   if (isIndexable<T>(input)) {
     const el = input[input.length - 1];
 
-    return el ?? (Array.isArray(input) ? el : "" as T);
+    return el ?? (Array.isArray(input) ? el : Char.Empty as T);
   }
 
   let element: T | undefined;
