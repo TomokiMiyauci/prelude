@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isString } from "./deps.ts";
+import { isIndexable } from "./deps.ts";
 
 /** Returns the last element of the given string.
  * @param input Any string.
@@ -44,9 +44,17 @@ export function last<const T>(input: readonly [...unknown[], T]): T;
  */
 export function last<T>(input: Iterable<T>): T | undefined;
 export function last<T>(input: Iterable<T>): T | undefined {
-  const result = [...input].pop();
+  if (isIndexable<T>(input)) {
+    const el = input[input.length - 1];
 
-  return isString(input) ? result ?? "" as T : result;
+    return el ?? (Array.isArray(input) ? el : "" as T);
+  }
+
+  let element: T | undefined;
+
+  for (const el of input) element = el;
+
+  return element;
 }
 
 /** Infer the last element of string. */

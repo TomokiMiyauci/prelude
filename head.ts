@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isString } from "./deps.ts";
+import { isIndexable } from "./deps.ts";
 
 /** Returns the first element of the given template literal.
  * @param input Any template literal.
@@ -58,9 +58,13 @@ export function head<const T>(input: readonly [T, ...unknown[]]): T;
 export function head<T>(input: Iterable<T>): T | undefined;
 
 export function head<T>(input: Iterable<T>): T | undefined {
-  for (const el of input) {
-    return el;
+  if (isIndexable<T>(input)) {
+    const first = input[0];
+
+    return first ?? (Array.isArray(input) ? first : "" as T);
   }
 
-  return isString(input) ? "" as T : undefined;
+  for (const el of input) return el;
+
+  return undefined;
 }
