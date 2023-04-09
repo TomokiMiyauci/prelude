@@ -1,3 +1,11 @@
+## [1.2.1-beta.1](https://github.com/TomokiMiyauci/prelude/compare/1.2.0...1.2.1-beta.1) (2023-04-09)
+
+
+### Performance Improvements
+
+* be proactive with index references ([1ab0450](https://github.com/TomokiMiyauci/prelude/commit/1ab045082f3d6c34a121c7191b62c7ea6a265fe2))
+* **head:** stop unnecessary spread operators ([d0e0031](https://github.com/TomokiMiyauci/prelude/commit/d0e0031d4c50b74439795fef21540d03b599acab))
+
 # [1.2.0](https://github.com/TomokiMiyauci/prelude/compare/1.1.0...1.2.0) (2023-04-08)
 
 
